@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme using Material Design 3 -->
+    <style name="Theme.SocialSparks" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">#FF6B35</item>
+        <item name="colorPrimaryContainer">#FFD166</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSecondary">#6C63FF</item>
+        <item name="android:statusBarColor">#FF6B35</item>
+    </style>
+</resources>

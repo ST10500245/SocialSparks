@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Warm, friendly colour palette for the app -->
+    <color name="orange_primary">#FF6B35</color>
+    <color name="orange_light">#F7931E</color>
+    <color name="yellow_accent">#FFD166</color>
+    <color name="purple_button">#6C63FF</color>
+    <color name="red_reset">#FF6B6B</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="dark_text">#2D2D2D</color>
+    <color name="light_text">#666666</color>
+    <color name="card_bg">#FAFAFA</color>
+    <color name="error_red">#E74C3C</color>
+</resources>

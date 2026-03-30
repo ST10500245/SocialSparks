@@ -1,0 +1,60 @@
+# GitHub Actions workflow for Social Sparks
+# This automatically builds the app every time we push code to GitHub.
+# It catches build errors early so we know the project compiles properly —
+# not just on our laptop, but on a clean machine too.
+
+name: Build Social Sparks
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    name: Build & Test
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Pull down our code from the repository
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Step 2: Set up the Java environment (Android needs JDK 17)
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      # Step 3: Cache Gradle files so builds are faster next time
+      - name: Cache Gradle packages
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
+          restore-keys: |
+            ${{ runner.os }}-gradle-
+
+      # Step 4: Make the Gradle wrapper script executable
+      - name: Grant execute permission for gradlew
+        run: chmod +x gradlew
+
+      # Step 5: Build the entire project (compiles the code, checks for errors)
+      - name: Build the project
+        run: ./gradlew build
+
+      # Step 6: Run any tests we have to make sure nothing is broken
+      - name: Run tests
+        run: ./gradlew test
+
+      # Step 7: Upload the built APK so we can download it from GitHub if needed
+      - name: Upload APK artifact
+        uses: actions/upload-artifact@v4
+        if: success()
+        with:
+          name: social-sparks-debug-apk
+          path: app/build/outputs/apk/debug/app-debug.apk

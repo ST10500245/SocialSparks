@@ -1,0 +1,30 @@
+# Built files and outputs
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+/app/build
+/app/release
+
+# Gradle wrapper JAR (we don't commit binaries)
+# Note: some teams DO commit the wrapper jar — either approach is fine
+# gradle/wrapper/gradle-wrapper.jar
+
+# IDE-specific files
+*.iml
+.idea/
+
+# OS junk
+.DS_Store
+Thumbs.db

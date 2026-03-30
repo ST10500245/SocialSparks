@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Social Sparks</string>
+    <string name="app_tagline">Stay connected, one spark at a time ✨</string>
+    <string name="hint_time_of_day">Type a time of day (e.g. Morning, Afternoon…)</string>
+    <string name="btn_get_spark">Get My Spark! ⚡</string>
+    <string name="btn_reset">Reset 🔄</string>
+    <string name="default_suggestion">Your social spark will appear here…</string>
+
+    <!-- Social spark suggestions for each time of day -->
+    <string name="spark_morning">🌅 Send a \"Good morning!\" text to a family member. A small message can brighten their whole day!</string>
+    <string name="spark_mid_morning">☕ Reach out to a colleague with a quick \"Thank you\" — gratitude goes a long way!</string>
+    <string name="spark_afternoon">😄 Share a funny meme or an interesting link with a friend. Laughter is the best connector!</string>
+    <string name="spark_snack_time">🍪 Send a quick \"thinking of you\" message to someone you care about. It only takes a second!</string>
+    <string name="spark_dinner">🍽️ Call a friend or relative for a 5-minute catch-up. Hearing a voice means more than a text!</string>
+    <string name="spark_night">🌙 Leave a thoughtful comment on a friend\'s social media post. Show them you noticed!</string>
+
+    <!-- Error messages - friendly and encouraging -->
+    <string name="error_empty_input">Oops! You forgot to type something. 😅\nTry entering a time like \"Morning\" or \"Dinner\"!</string>
+    <string name="error_invalid_input">Hmm, I don\'t recognise that time of day. 🤔\n\nTry one of these:\n• Morning\n• Mid-morning\n• Afternoon\n• Afternoon Snack Time\n• Dinner\n• Night</string>
+</resources>
