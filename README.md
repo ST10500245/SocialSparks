@@ -101,6 +101,7 @@ This is done by converting user input to lowercase and checking multiple variati
 ![alt text](Screenshots/Screenshot_20260330_211722.png)
 ![alt text](Screenshots/Screenshot_20260330_211737.png)
 ![alt text](Screenshots/Screenshot_20260330_212327.png)
+![alt text](Screenshots/Screenshot_20260330_223716.png)
 | Home Screen | Suggestion Displayed | Error State |
 |:-----------:|:--------------------:|:-----------:|
 | ![Home](screenshots/home.png) | ![Suggestion](screenshots/suggestion.png) | ![Error](screenshots/error.png) |
