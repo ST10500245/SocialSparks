@@ -1,10 +1,6 @@
-# 🌟 Social Sparks — Stay Connected, One Spark at a Time
+Social Sparks 
 
-> *Built with love for my friend Cora, who sometimes forgets to text back.*
-
----
-
-## 📖 Table of Contents
+# Table of Contents
 
 - [Purpose of the App](#-purpose-of-the-app)
 - [App Design & Considerations](#-app-design--considerations)
@@ -19,7 +15,7 @@
 
 ---
 
-## 🎯 Purpose of the App
+# Purpose of the App
 
 We all get busy. Life gets hectic, and before you know it, days or even weeks go by without reaching out to the people who matter most. My close friend **Cora** brought this up — she wanted a simple way to stay socially connected throughout the day without it feeling like a chore.
 
@@ -29,11 +25,11 @@ The idea is dead simple: **tell the app what time of day it is, and it gives you
 
 The app doesn't track you, doesn't send notifications, and doesn't require an account. It's just a friendly little tool that nudges you to be a bit more connected.
 
----
 
-## 🎨 App Design & Considerations
 
-### Design Philosophy
+# App Design & Considerations
+
+# Design Philosophy
 
 I wanted the app to feel **warm, inviting, and fun** — not like a productivity app you'd eventually ignore. Here's what I focused on:
 
@@ -43,7 +39,7 @@ I wanted the app to feel **warm, inviting, and fun** — not like a productivity
 - **Rounded corners everywhere**: Soft shapes feel welcoming. Sharp corners feel corporate.
 - **Single-screen simplicity**: No navigation, no menus, no settings. Just type, tap, and go.
 
-### Colour Choices
+# Colour Choices
 
 | Element | Colour | Why |
 |---------|--------|-----|
@@ -53,29 +49,29 @@ I wanted the app to feel **warm, inviting, and fun** — not like a productivity
 | Suggestion card | White | Clean contrast, easy to read |
 | Error messages | Red (#E74C3C) | Universally understood as "pay attention" |
 
-### Error Handling Approach
+# Error Handling Approach
 
 Instead of dry error messages like "Invalid input," the app uses **friendly, encouraging language**:
 
 - **Empty input**: *"Oops! You forgot to type something. 😅 Try entering a time like 'Morning' or 'Dinner'!"*
-- **Unrecognised input**: *"Hmm, I don't recognise that time of day. 🤔"* followed by a list of valid options.
+- **Unrecognised input**: *"Hmm, I don't recognise that time of🤔"* followed by a list of valid options.
 
-The goal is to **guide** the user, not scold them. Cora shouldn't feel bad about a typo.
+The goal is to **guide** the her, not scold her. Cora shouldn'tbad about a typo.
 
 ---
 
-## ⚙️ How It Works
+#  How It Works
 
-The core logic is intentionally simple — it uses **if-else statements** to match the user's input to a predefined set of social suggestions.
+The core logic is intentionally simple — it uses if-else statements to match the user's input to a predefined set of social suggestions.
 
-### Flow:
+# Flow:
 
 ```
 User types time of day → App cleans the input → If-else matching → Display suggestion
                                                                  ↘ Or show friendly error
 ```
 
-### The Sparks:
+# The Sparks:
 
 | Time of Day | Social Spark |
 |-------------|-------------|
@@ -86,7 +82,7 @@ User types time of day → App cleans the input → If-else matching → Display
 | 🍽️ **Dinner** | Call a friend or relative for a 5-minute catch-up |
 | 🌙 **Night** | Leave a thoughtful comment on a friend's post |
 
-### Input Matching
+# Input Matching
 
 The app is forgiving with input. For example, typing any of these will match "Morning":
 - `morning`
@@ -99,19 +95,20 @@ This is done by converting user input to lowercase and checking multiple variati
 
 ---
 
-## 📸 Screenshots
-
-> *Add your own screenshots here after running the app!*
-
+#  Screenshots
+![alt text](Screenshots/Screenshot_20260330_211538.png)
+![alt text](Screenshots/Screenshot_20260330_211657.png)
+![alt text](Screenshots/Screenshot_20260330_211722.png)
+![alt text](Screenshots/Screenshot_20260330_211737.png)
+![alt text](Screenshots/Screenshot_20260330_212327.png)
 | Home Screen | Suggestion Displayed | Error State |
 |:-----------:|:--------------------:|:-----------:|
 | ![Home](screenshots/home.png) | ![Suggestion](screenshots/suggestion.png) | ![Error](screenshots/error.png) |
 
-*To take a screenshot in Android Studio's emulator, click the camera icon in the emulator toolbar.*
 
 ---
 
-## 📁 Project Structure
+#  Project Structure
 
 ```
 SocialSparks/
@@ -138,36 +135,36 @@ SocialSparks/
 
 ---
 
-## 🚀 Setup & Installation
+#  Setup & Installation
 
-### Prerequisites
+# Prerequisites
 
 - **Android Studio** (Hedgehog or newer recommended)
 - **JDK 17** (bundled with Android Studio)
 - **Android SDK 34** (install via SDK Manager in Android Studio)
 
-### Steps
+# Steps
 
-1. **Clone the repository:**
+1. *Clone the repository:*
    ```bash
-   git clone https://github.com/YOUR_USERNAME/SocialSparks.git
+   git clone https://github.com/ST10500245/SocialSparks.git
    ```
 
-2. **Open in Android Studio:**
+2. *Open in Android Studio:*
    - Launch Android Studio
    - Click **"Open"** and select the `SocialSparks` folder
    - Wait for Gradle to sync (this might take a minute the first time)
 
-3. **Run the app:**
+3. *Run the app:*
    - Select an emulator or connect a physical device
    - Click the green **Run ▶** button
    - The app should launch automatically
 
 ---
 
-## 🔗 GitHub & Version Control
+#  GitHub & Version Control
 
-### Repository Setup
+# Repository Setup
 
 1. Created a new GitHub repository called `SocialSparks`
 2. Initialised with this README file
@@ -188,54 +185,46 @@ git commit -m "Set up GitHub Actions for automated builds"
 git commit -m "Add comprehensive README with project report"
 ```
 
-### Branching Strategy
+# Branching Strategy
 
 - `main` — stable, working code only
 - Feature branches for larger changes (e.g., `feature/add-animations`)
 
-### How to Push Changes
-
-```bash
-git add .
-git commit -m "Your descriptive commit message"
-git push origin main
-```
-
 ---
 
-## 🤖 GitHub Actions (CI/CD)
+#  GitHub Actions (CI/CD)
 
-### What Is It?
+# What Is It?
 
 GitHub Actions is a tool built into GitHub that **automatically runs tasks whenever you push code**. For this project, it:
 
-1. **Checks out** the latest code
-2. **Sets up** JDK 17 on a clean Ubuntu machine
-3. **Builds** the entire Android project
-4. **Runs tests** to catch any issues
-5. **Uploads** the debug APK as a downloadable artifact
+1. *Checks out** the latest code
+2. *Sets up** JDK 17 on a clean Ubuntu machine
+3. *Builds** the entire Android project
+4. *Runs tests** to catch any issues
+5. *Uploads** the debug APK as a downloadable artifact
 
-### Why Use It?
+# Why i Used It?
 
 - **Catches problems early**: If the code doesn't compile, the build fails and GitHub flags it immediately.
 - **Works on a clean machine**: Just because it builds on your laptop doesn't mean it'll build everywhere. GitHub Actions tests on a fresh environment.
 - **Automatic**: You don't have to remember to test — it happens automatically on every push.
 
-### Workflow File
+# Workflow File
 
 The workflow lives at `.github/workflows/android.yml` and is triggered on:
 - Every **push** to `main`
 - Every **pull request** targeting `main`
 
-### Checking Build Status
+# Checking Build Status
 
 After pushing code, go to the **"Actions"** tab on your GitHub repository to see if the build passed or failed. A green checkmark ✅ means everything is good!
 
 ---
 
-## 🧪 Testing & Debugging
+# Testing & Debugging
 
-### Manual Testing
+# Manual Testing
 
 I tested the app manually by entering every valid input and several invalid ones. Here's what I checked:
 
@@ -253,7 +242,7 @@ I tested the app manually by entering every valid input and several invalid ones
 | Random text | "banana" | Helpful error with options | ✅ Pass |
 | Spaces only | "   " | Treated as empty | ✅ Pass |
 
-### Using Logcat for Debugging
+# Using Logcat for Debugging
 
 The app uses `Log.d()`, `Log.i()`, and `Log.w()` throughout the code to help with debugging:
 
@@ -263,12 +252,12 @@ Log.i("SocialSparks", "Matched: MORNING")
 Log.w("SocialSparks", "No match found for input: \"banana\"")
 ```
 
-**To view logs in Android Studio:**
-1. Open the **Logcat** panel at the bottom
+*To view logs in Android Studio:*
+1. Open the *Logcat* panel at the bottom
 2. Filter by tag: `SocialSparks`
 3. You'll see exactly what the app is doing in real time
 
-### Automated Testing via GitHub Actions
+# Automated Testing via GitHub Actions
 
 While no unit tests were written (as per the brief), the GitHub Actions workflow runs `./gradlew test` and `./gradlew build` on every push. This ensures:
 - The project compiles without errors
@@ -277,7 +266,7 @@ While no unit tests were written (as per the brief), the GitHub Actions workflow
 
 ---
 
-## 🛠️ Technologies Used
+# Technologies Used
 
 | Technology | Purpose |
 |-----------|---------|
@@ -291,19 +280,11 @@ While no unit tests were written (as per the brief), the GitHub Actions workflow
 
 ---
 
-## 💡 Future Ideas
+# Future Ideas
 
 If I keep working on this app, here's what I'd add:
-- **Time-based auto-detection**: Use the device clock to skip the typing step
-- **Custom sparks**: Let Cora add her own suggestions
-- **Spark history**: Track which sparks were completed
-- **Animations**: Add a little sparkle animation when a suggestion appears
-- **Dark mode**: For those late-night spark sessions
-
----
-
-## 👋 Credits
-
-Built by a student who believes that staying connected shouldn't be complicated.
-
-Made with ❤️ for Cora.
+- Time-based auto-detection: Use the device clock to skip the typing step
+- Custom sparks: Let Cora add her own suggestions
+- Spark history: Track which sparks were completed
+- Animations: Add a little sparkle animation when a suggestion appears
+- Dark mode: For those late-night spark sessions
